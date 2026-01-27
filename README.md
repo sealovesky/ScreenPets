@@ -54,10 +54,12 @@ ScreenPets is a lightweight macOS menu bar application that brings back the nost
 
 ### Screenshots
 
-<!-- TODO: Add screenshots -->
-<p float="left">
-  <img src="assets/screenshots/screenshot1.png" width="400" alt="Dragon Pet" />
-  <img src="assets/screenshots/screenshot2.png" width="400" alt="Settings Panel" />
+<p align="center">
+  <img src="assets/screenshots/dragon-demo.gif" alt="Dragon Demo" />
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/settings.png" width="300" alt="Settings Panel" />
 </p>
 
 ### Installation
@@ -169,10 +171,12 @@ ScreenPets 是一款轻量级的 macOS 菜单栏应用，让你重温经典的�
 
 ### 截图
 
-<!-- TODO: 添加截图 -->
-<p float="left">
-  <img src="assets/screenshots/screenshot1.png" width="400" alt="飞龙宠物" />
-  <img src="assets/screenshots/screenshot2.png" width="400" alt="设置面板" />
+<p align="center">
+  <img src="assets/screenshots/dragon-demo.gif" alt="飞龙演示" />
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/settings.png" width="300" alt="设置面板" />
 </p>
 
 ### 安装
