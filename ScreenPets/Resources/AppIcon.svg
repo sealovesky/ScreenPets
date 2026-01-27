@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- 深紫色高级渐变背景 -->
+    <linearGradient id="bgGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="50%" style="stop-color:#2d1b4e"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+
+    <!-- 背景光晕 -->
+    <radialGradient id="glowBg" cx="65%" cy="35%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- 龙身渐变 -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#cc2200"/>
+      <stop offset="50%" style="stop-color:#ff4400"/>
+      <stop offset="100%" style="stop-color:#ff6633"/>
+    </linearGradient>
+
+    <!-- 火焰渐变 -->
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffdd00"/>
+      <stop offset="100%" style="stop-color:#ff8800"/>
+    </linearGradient>
+
+    <!-- 尾部火焰渐变 -->
+    <linearGradient id="tailFireGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#cc3300"/>
+      <stop offset="100%" style="stop-color:#881100"/>
+    </linearGradient>
+
+    <!-- 发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 强发光 -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景圆角矩形 -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96" fill="url(#bgGrad)"/>
+
+  <!-- 背景光晕效果 -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96" fill="url(#glowBg)"/>
+
+  <!-- 装饰星点 - 大星 -->
+  <circle cx="90" cy="120" r="2.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="440" cy="90" r="2" fill="#ffffff" opacity="0.55"/>
+  <circle cx="400" cy="420" r="2.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="70" cy="280" r="2" fill="#ffffff" opacity="0.45"/>
+
+  <!-- 装饰星点 - 中星 -->
+  <circle cx="180" cy="80" r="1.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="350" cy="450" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="460" cy="200" r="1.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="55" cy="180" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="280" cy="60" r="1.5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="480" cy="350" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="150" cy="450" r="1.5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- 装饰星点 - 小星 -->
+  <circle cx="120" cy="200" r="1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="420" cy="280" r="1" fill="#ffffff" opacity="0.25"/>
+  <circle cx="250" cy="450" r="1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="380" cy="60" r="1" fill="#ffffff" opacity="0.35"/>
+  <circle cx="50" cy="450" r="1" fill="#ffffff" opacity="0.25"/>
+  <circle cx="470" cy="450" r="1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="320" cy="420" r="1" fill="#ffffff" opacity="0.25"/>
+  <circle cx="200" cy="120" r="1" fill="#ffffff" opacity="0.3"/>
+
+  <!-- 微光点缀 -->
+  <circle cx="100" cy="60" r="0.8" fill="#ffcc66" opacity="0.3"/>
+  <circle cx="480" cy="130" r="0.8" fill="#ffcc66" opacity="0.25"/>
+  <circle cx="60" cy="420" r="0.8" fill="#ffcc66" opacity="0.25"/>
+
+  <!-- 尾部火焰 - 斜向下 -->
+  <path d="M 120 370
+           Q 90 385 85 360
+           Q 65 375 60 345
+           Q 45 355 50 325"
+        stroke="url(#tailFireGrad)" stroke-width="10" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- 蛇形龙身 - 斜向上飞的姿态 -->
+  <path d="M 130 355
+           Q 165 310 195 330
+           Q 230 355 265 300
+           Q 300 245 335 270
+           Q 370 300 385 245
+           Q 400 195 380 155"
+        stroke="url(#bodyGrad)" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- 龙头 - 右上方 -->
+  <circle cx="375" cy="145" r="45" fill="#ff3300" filter="url(#glow)"/>
+
+  <!-- 龙头高光 -->
+  <circle cx="358" cy="130" r="16" fill="#ff5533" opacity="0.5"/>
+
+  <!-- 眼睛 -->
+  <ellipse cx="390" cy="135" rx="12" ry="14" fill="#ffff00"/>
+  <ellipse cx="393" cy="137" rx="5" ry="7" fill="#1a1a1a"/>
+  <circle cx="390" cy="133" r="3.5" fill="white" opacity="0.9"/>
+
+  <!-- 龙角 - 向上 -->
+  <path d="M 350 115 L 320 70 L 345 105" fill="#ff8800" stroke="#ff6600" stroke-width="2"/>
+  <path d="M 368 105 L 350 55 L 370 95" fill="#ff8800" stroke="#ff6600" stroke-width="2"/>
+
+  <!-- 龙须 - 飘向后方 -->
+  <path d="M 405 165 Q 440 190 460 175" stroke="#ff6600" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 400 175 Q 430 205 455 195" stroke="#ff6600" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- 火焰喷射 - 向右上方 -->
+  <path d="M 415 130
+           Q 445 100 460 115
+           Q 480 90 495 105
+           Q 475 115 490 130
+           Q 470 125 455 140
+           Q 440 125 415 140 Z"
+        fill="url(#fireGrad)" opacity="0.95" filter="url(#strongGlow)"/>
+
+  <!-- 内层火焰 -->
+  <path d="M 420 132
+           Q 445 115 458 125
+           Q 468 118 475 122
+           Q 455 130 420 138 Z"
+        fill="#ffffff" opacity="0.75"/>
+
+  <!-- 龙鳞装饰点 -->
+  <circle cx="165" cy="335" r="4.5" fill="#ffcc00" opacity="0.85"/>
+  <circle cx="210" cy="340" r="4.5" fill="#ffcc00" opacity="0.85"/>
+  <circle cx="265" cy="310" r="4.5" fill="#ffcc00" opacity="0.85"/>
+  <circle cx="315" cy="270" r="4.5" fill="#ffcc00" opacity="0.85"/>
+  <circle cx="360" cy="260" r="4.5" fill="#ffcc00" opacity="0.85"/>
+  <circle cx="385" cy="205" r="4.5" fill="#ffcc00" opacity="0.85"/>
+</svg>

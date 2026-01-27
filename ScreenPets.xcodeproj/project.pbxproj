@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DA9B08A9B13CB0671E52627 /* DragonPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BF115E59451403B06B6B73 /* DragonPet.swift */; };
+		287691B115C71DDE5A65E47E /* GhostPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99E6F7749B68693746A4C5 /* GhostPet.swift */; };
+		2E4DF978B03F27EE2DBEC2A6 /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C653E9FAA2C6292CCF4B3E /* PetManager.swift */; };
+		6DFA2E455252E8E23F5B352E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684002011D05AF8A8B20C2D /* SettingsView.swift */; };
+		721CDA0BA89891F990BEBC4C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0852FAB79ACDE5EFC4359 /* Pet.swift */; };
+		7EB32F380C3EC2AA47410128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF315B060D3E21AC314C58D2 /* Assets.xcassets */; };
+		9BD01A8AF5CFE95D5B3741C1 /* PetWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8923E84ED60AD04B89A585 /* PetWindowController.swift */; };
+		9DB72EFB2907C635DBC8CA05 /* NyanCatPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278A71EF9308691A6760299 /* NyanCatPet.swift */; };
+		B269112E0457F2FE945D78DA /* PetSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D50FAF5615F1EC55D43BA /* PetSettings.swift */; };
+		CD9C6FE60C406393FA1892B1 /* ScreenPetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A67E43C82F0FF701746A6 /* ScreenPetsApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A99E6F7749B68693746A4C5 /* GhostPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostPet.swift; sourceTree = "<group>"; };
+		2B3D50FAF5615F1EC55D43BA /* PetSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSettings.swift; sourceTree = "<group>"; };
+		438A67E43C82F0FF701746A6 /* ScreenPetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPetsApp.swift; sourceTree = "<group>"; };
+		5684002011D05AF8A8B20C2D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5A8923E84ED60AD04B89A585 /* PetWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetWindowController.swift; sourceTree = "<group>"; };
+		6278A71EF9308691A6760299 /* NyanCatPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyanCatPet.swift; sourceTree = "<group>"; };
+		7AA5E3C8EB41A74F64F3DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		803615580FF52765CEFB8B5F /* ScreenPets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenPets.entitlements; sourceTree = "<group>"; };
+		82F84033162C2AE97E65F0B9 /* ScreenPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BF115E59451403B06B6B73 /* DragonPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonPet.swift; sourceTree = "<group>"; };
+		A7C653E9FAA2C6292CCF4B3E /* PetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManager.swift; sourceTree = "<group>"; };
+		AF315B060D3E21AC314C58D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C0852FAB79ACDE5EFC4359 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1105BD2F269B1284DB7F9D99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5684002011D05AF8A8B20C2D /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FCB9AE698EA91E164F77252 /* ScreenPets */ = {
+			isa = PBXGroup;
+			children = (
+				7AA5E3C8EB41A74F64F3DFA3 /* Info.plist */,
+				803615580FF52765CEFB8B5F /* ScreenPets.entitlements */,
+				438A67E43C82F0FF701746A6 /* ScreenPetsApp.swift */,
+				34A6CD49FA0441A10861C081 /* Managers */,
+				C7310D18F8D4B353F78E0133 /* Models */,
+				DB44EACEB2E5341B63DDB868 /* Pets */,
+				B5A8E6BD32A3A19AD7792BDC /* Resources */,
+				1105BD2F269B1284DB7F9D99 /* Views */,
+			);
+			path = ScreenPets;
+			sourceTree = "<group>";
+		};
+		34A6CD49FA0441A10861C081 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C653E9FAA2C6292CCF4B3E /* PetManager.swift */,
+				5A8923E84ED60AD04B89A585 /* PetWindowController.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A1A8504A45B844355C50B349 = {
+			isa = PBXGroup;
+			children = (
+				1FCB9AE698EA91E164F77252 /* ScreenPets */,
+				A7DF637A6B7C2B4EC8212176 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7DF637A6B7C2B4EC8212176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F84033162C2AE97E65F0B9 /* ScreenPets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A8E6BD32A3A19AD7792BDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF315B060D3E21AC314C58D2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C7310D18F8D4B353F78E0133 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0852FAB79ACDE5EFC4359 /* Pet.swift */,
+				2B3D50FAF5615F1EC55D43BA /* PetSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB44EACEB2E5341B63DDB868 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				85BF115E59451403B06B6B73 /* DragonPet.swift */,
+				1A99E6F7749B68693746A4C5 /* GhostPet.swift */,
+				6278A71EF9308691A6760299 /* NyanCatPet.swift */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F66C1337402060124F63ED59 /* ScreenPets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FF6821EF7B5BDA677203C0 /* Build configuration list for PBXNativeTarget "ScreenPets" */;
+			buildPhases = (
+				1D228156ECE0A0D40C9884C9 /* Sources */,
+				196A6169A42518DFDAC2059A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenPets;
+			packageProductDependencies = (
+			);
+			productName = ScreenPets;
+			productReference = 82F84033162C2AE97E65F0B9 /* ScreenPets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C39F5B2EF2EA824EAC8AB317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F66C1337402060124F63ED59 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFBC39C13FCEA9925E3119D9 /* Build configuration list for PBXProject "ScreenPets" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A1A8504A45B844355C50B349;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F66C1337402060124F63ED59 /* ScreenPets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		196A6169A42518DFDAC2059A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB32F380C3EC2AA47410128 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D228156ECE0A0D40C9884C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA9B08A9B13CB0671E52627 /* DragonPet.swift in Sources */,
+				287691B115C71DDE5A65E47E /* GhostPet.swift in Sources */,
+				9DB72EFB2907C635DBC8CA05 /* NyanCatPet.swift in Sources */,
+				721CDA0BA89891F990BEBC4C /* Pet.swift in Sources */,
+				2E4DF978B03F27EE2DBEC2A6 /* PetManager.swift in Sources */,
+				B269112E0457F2FE945D78DA /* PetSettings.swift in Sources */,
+				9BD01A8AF5CFE95D5B3741C1 /* PetWindowController.swift in Sources */,
+				CD9C6FE60C406393FA1892B1 /* ScreenPetsApp.swift in Sources */,
+				6DFA2E455252E8E23F5B352E /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		533F78755179000AB676ECD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenPets/ScreenPets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ScreenPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sls.ScreenPets;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B298D04876E7DCCF1A45498D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		E62F9A02CD592CE3B4430015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenPets/ScreenPets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ScreenPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sls.ScreenPets;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD8995043FD091C4C4B70DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73FF6821EF7B5BDA677203C0 /* Build configuration list for PBXNativeTarget "ScreenPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62F9A02CD592CE3B4430015 /* Debug */,
+				533F78755179000AB676ECD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFBC39C13FCEA9925E3119D9 /* Build configuration list for PBXProject "ScreenPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B298D04876E7DCCF1A45498D /* Debug */,
+				FD8995043FD091C4C4B70DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C39F5B2EF2EA824EAC8AB317 /* Project object */;
+}
