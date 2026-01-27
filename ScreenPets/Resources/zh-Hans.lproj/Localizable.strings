@@ -1,0 +1,30 @@
+/* Settings View */
+"settings.title" = "ScreenPets";
+"settings.selectPet" = "选择宠物";
+"settings.movementMode" = "移动模式";
+"settings.speed" = "移动速度";
+"settings.size" = "宠物大小";
+"settings.launchAtLogin" = "开机自启动";
+"settings.about" = "关于";
+"settings.quit" = "退出";
+
+/* Pet Types */
+"pet.dragon" = "飞龙";
+"pet.nyanCat" = "彩虹猫";
+"pet.ghost" = "幽灵";
+
+/* Movement Modes */
+"mode.secondaryOnly" = "副屏";
+"mode.crossScreen" = "跨屏";
+"mode.freeRoam" = "自由飞";
+
+/* Mode Descriptions */
+"mode.secondaryOnly.desc" = "宠物只在副屏上活动";
+"mode.crossScreen.desc" = "宠物在所有屏幕之间移动";
+"mode.freeRoam.desc" = "宠物在整个屏幕自由飞行";
+
+/* About Dialog */
+"about.version" = "版本 1.0.1";
+"about.description" = "让可爱的小宠物在你的屏幕上奔跑！";
+"about.pets" = "🐉 飞龙 - 喷火的小龙\n🌈 彩虹猫 - Nyan Cat 风格\n👻 幽灵 - 可爱的小幽灵";
+"about.ok" = "确定";

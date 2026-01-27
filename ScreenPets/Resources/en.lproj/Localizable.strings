@@ -1,0 +1,30 @@
+/* Settings View */
+"settings.title" = "ScreenPets";
+"settings.selectPet" = "Select Pet";
+"settings.movementMode" = "Movement Mode";
+"settings.speed" = "Speed";
+"settings.size" = "Size";
+"settings.launchAtLogin" = "Launch at Login";
+"settings.about" = "About";
+"settings.quit" = "Quit";
+
+/* Pet Types */
+"pet.dragon" = "Dragon";
+"pet.nyanCat" = "Nyan Cat";
+"pet.ghost" = "Ghost";
+
+/* Movement Modes */
+"mode.secondaryOnly" = "Secondary";
+"mode.crossScreen" = "Cross Screen";
+"mode.freeRoam" = "Free Roam";
+
+/* Mode Descriptions */
+"mode.secondaryOnly.desc" = "Pet only moves on secondary screen";
+"mode.crossScreen.desc" = "Pet moves across all screens";
+"mode.freeRoam.desc" = "Pet flies freely across the screen";
+
+/* About Dialog */
+"about.version" = "Version 1.0.1";
+"about.description" = "Let cute pets roam on your screen!";
+"about.pets" = "🐉 Dragon - Fire breathing dragon\n🌈 Nyan Cat - Rainbow cat style\n👻 Ghost - Cute little ghost";
+"about.ok" = "OK";

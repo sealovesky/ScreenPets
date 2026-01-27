@@ -1,4 +1,5 @@
 import SwiftUI
+import Foundation
 
 /// 宠物移动模式
 enum PetMode: String, CaseIterable, Identifiable {
@@ -7,6 +8,22 @@ enum PetMode: String, CaseIterable, Identifiable {
     case freeRoam = "自由飞"
 
     var id: String { rawValue }
+
+    var localizedName: String {
+        switch self {
+        case .secondaryOnly: return NSLocalizedString("mode.secondaryOnly", comment: "")
+        case .crossScreen: return NSLocalizedString("mode.crossScreen", comment: "")
+        case .freeRoam: return NSLocalizedString("mode.freeRoam", comment: "")
+        }
+    }
+
+    var localizedDescription: String {
+        switch self {
+        case .secondaryOnly: return NSLocalizedString("mode.secondaryOnly.desc", comment: "")
+        case .crossScreen: return NSLocalizedString("mode.crossScreen.desc", comment: "")
+        case .freeRoam: return NSLocalizedString("mode.freeRoam.desc", comment: "")
+        }
+    }
 
     var description: String {
         switch self {
@@ -93,6 +110,14 @@ enum PetType: String, CaseIterable, Identifiable {
         case .dragon: return "🐉"
         case .nyanCat: return "🌈"
         case .ghost: return "👻"
+        }
+    }
+
+    var localizedName: String {
+        switch self {
+        case .dragon: return NSLocalizedString("pet.dragon", comment: "")
+        case .nyanCat: return NSLocalizedString("pet.nyanCat", comment: "")
+        case .ghost: return NSLocalizedString("pet.ghost", comment: "")
         }
     }
 

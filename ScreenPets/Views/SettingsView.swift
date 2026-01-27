@@ -10,7 +10,7 @@ struct SettingsView: View {
         VStack(alignment: .leading, spacing: 16) {
             // 标题
             HStack {
-                Text("🐾 ScreenPets")
+                Text("🐾 \(NSLocalizedString("settings.title", comment: ""))")
                     .font(.headline)
                 Spacer()
                 Toggle("", isOn: $settings.isEnabled)
@@ -22,7 +22,7 @@ struct SettingsView: View {
 
             // 宠物选择
             VStack(alignment: .leading, spacing: 8) {
-                Text("选择宠物")
+                Text(NSLocalizedString("settings.selectPet", comment: ""))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
 
@@ -42,19 +42,19 @@ struct SettingsView: View {
 
             // 模式选择
             VStack(alignment: .leading, spacing: 8) {
-                Text("移动模式")
+                Text(NSLocalizedString("settings.movementMode", comment: ""))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
 
                 Picker("", selection: $settings.petModeRaw) {
                     ForEach(PetMode.allCases) { mode in
-                        Text(mode.rawValue).tag(mode.rawValue)
+                        Text(mode.localizedName).tag(mode.rawValue)
                     }
                 }
                 .pickerStyle(.segmented)
                 .labelsHidden()
 
-                Text(settings.petMode.description)
+                Text(settings.petMode.localizedDescription)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -64,7 +64,7 @@ struct SettingsView: View {
             // 速度调节
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text("移动速度")
+                    Text(NSLocalizedString("settings.speed", comment: ""))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     Spacer()
@@ -79,7 +79,7 @@ struct SettingsView: View {
             // 大小调节
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text("宠物大小")
+                    Text(NSLocalizedString("settings.size", comment: ""))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     Spacer()
@@ -95,7 +95,7 @@ struct SettingsView: View {
 
             // 开机自启动
             HStack {
-                Text("开机自启动")
+                Text(NSLocalizedString("settings.launchAtLogin", comment: ""))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 Spacer()
@@ -108,13 +108,13 @@ struct SettingsView: View {
 
             // 底部按钮
             HStack {
-                Button("关于") {
+                Button(NSLocalizedString("settings.about", comment: "")) {
                     showAbout()
                 }
 
                 Spacer()
 
-                Button("退出") {
+                Button(NSLocalizedString("settings.quit", comment: "")) {
                     NSApplication.shared.terminate(nil)
                 }
             }
@@ -126,9 +126,12 @@ struct SettingsView: View {
     private func showAbout() {
         let alert = NSAlert()
         alert.messageText = "ScreenPets"
-        alert.informativeText = "版本 1.0\n\n让可爱的小宠物在你的屏幕上奔跑！\n\n🐉 飞龙 - 喷火的小龙\n🌈 彩虹猫 - Nyan Cat 风格\n👻 幽灵 - 可爱的小幽灵"
+        let version = NSLocalizedString("about.version", comment: "")
+        let desc = NSLocalizedString("about.description", comment: "")
+        let pets = NSLocalizedString("about.pets", comment: "")
+        alert.informativeText = "\(version)\n\n\(desc)\n\n\(pets)"
         alert.alertStyle = .informational
-        alert.addButton(withTitle: "确定")
+        alert.addButton(withTitle: NSLocalizedString("about.ok", comment: ""))
         alert.runModal()
     }
 }
@@ -145,7 +148,7 @@ struct PetSelectionButton: View {
                 Text(petType.icon)
                     .font(.system(size: 28))
 
-                Text(petType.rawValue)
+                Text(petType.localizedName)
                     .font(.caption)
             }
             .frame(width: 70, height: 60)
