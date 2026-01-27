@@ -124,11 +124,12 @@ ScreenPets/
 
 ### Roadmap
 
+- [x] Speed adjustment slider
+- [x] Launch at login option
+- [x] Localization (English & Chinese)
 - [ ] More pet types (cat, dog, bird, fish, etc.)
 - [ ] Pet interactions (click reactions, idle animations)
 - [ ] Sound effects
-- [ ] Speed adjustment slider
-- [ ] Launch at login option
 - [ ] Keyboard shortcuts
 - [ ] Drag to reposition pets
 - [ ] Multiple pets simultaneously
@@ -241,11 +242,12 @@ ScreenPets/
 
 ### 开发计划
 
+- [x] 速度调节滑块
+- [x] 开机自启动选项
+- [x] 多语言支持（中文/英文）
 - [ ] 更多宠物类型（猫、狗、鸟、鱼等）
 - [ ] 宠物交互（点击反应、待机动画）
 - [ ] 音效
-- [ ] 速度调节滑块
-- [ ] 开机自启动选项
 - [ ] 快捷键支持
 - [ ] 拖拽移动宠物
 - [ ] 多宠物同时显示
