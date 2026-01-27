@@ -4,6 +4,7 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject var petManager: PetManager
     @EnvironmentObject var settings: SettingsManager
+    @StateObject private var launchAtLogin = LaunchAtLoginManager.shared
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -88,6 +89,19 @@ struct SettingsView: View {
                 }
 
                 Slider(value: $settings.petScale, in: 0.5...2.0, step: 0.1)
+            }
+
+            Divider()
+
+            // 开机自启动
+            HStack {
+                Text("开机自启动")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                Spacer()
+                Toggle("", isOn: $launchAtLogin.isEnabled)
+                    .toggleStyle(.switch)
+                    .labelsHidden()
             }
 
             Divider()

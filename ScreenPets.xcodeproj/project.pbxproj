@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1B2C3D4E5F6A7B8C9D0E1F /* LaunchAtLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C3D4E5F6A7B8C9D0E1F2A /* LaunchAtLoginManager.swift */; };
 		1DA9B08A9B13CB0671E52627 /* DragonPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BF115E59451403B06B6B73 /* DragonPet.swift */; };
 		287691B115C71DDE5A65E47E /* GhostPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99E6F7749B68693746A4C5 /* GhostPet.swift */; };
 		2E4DF978B03F27EE2DBEC2A6 /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C653E9FAA2C6292CCF4B3E /* PetManager.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2C3D4E5F6A7B8C9D0E1F2A /* LaunchAtLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginManager.swift; sourceTree = "<group>"; };
 		1A99E6F7749B68693746A4C5 /* GhostPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostPet.swift; sourceTree = "<group>"; };
 		2B3D50FAF5615F1EC55D43BA /* PetSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSettings.swift; sourceTree = "<group>"; };
 		438A67E43C82F0FF701746A6 /* ScreenPetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPetsApp.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		34A6CD49FA0441A10861C081 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1B2C3D4E5F6A7B8C9D0E1F2A /* LaunchAtLoginManager.swift */,
 				A7C653E9FAA2C6292CCF4B3E /* PetManager.swift */,
 				5A8923E84ED60AD04B89A585 /* PetWindowController.swift */,
 			);
@@ -183,6 +186,7 @@
 			files = (
 				1DA9B08A9B13CB0671E52627 /* DragonPet.swift in Sources */,
 				287691B115C71DDE5A65E47E /* GhostPet.swift in Sources */,
+				0A1B2C3D4E5F6A7B8C9D0E1F /* LaunchAtLoginManager.swift in Sources */,
 				9DB72EFB2907C635DBC8CA05 /* NyanCatPet.swift in Sources */,
 				721CDA0BA89891F990BEBC4C /* Pet.swift in Sources */,
 				2E4DF978B03F27EE2DBEC2A6 /* PetManager.swift in Sources */,
