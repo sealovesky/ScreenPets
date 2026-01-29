@@ -152,6 +152,7 @@ struct PetSelectionButton: View {
                     .font(.caption)
             }
             .frame(width: 70, height: 60)
+            .contentShape(Rectangle())  // 让整个区域可点击
             .background(isSelected ? Color.accentColor.opacity(0.2) : Color.clear)
             .cornerRadius(8)
             .overlay(

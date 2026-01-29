@@ -3,15 +3,13 @@ import SwiftUI
 @main
 struct ScreenPetsApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
     var body: some Scene {
         MenuBarExtra {
             SettingsView()
                 .environmentObject(PetManager.shared)
                 .environmentObject(SettingsManager.shared)
         } label: {
-            Image(systemName: SettingsManager.shared.isEnabled ? "pawprint.fill" : "pawprint")
-                .symbolRenderingMode(.hierarchical)
+            Image(systemName: "pawprint.fill")
         }
         .menuBarExtraStyle(.window)
     }
